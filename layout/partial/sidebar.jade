@@ -8,27 +8,31 @@
           p= config.subtitle
 
   ul.social-links
+    if config.social_telegram
+      li
+        a(href="https://t.me/" + config.social_telegram)
+          i.fa.fa-telegram
     if config.social_twitter
       li
         a(href="https://twitter.com/" + config.social_twitter)
           i.fa.fa-twitter
-    if config.social_instagram
+    if config.social_flickr
       li
-        a(href="http://instagram.com/" + config.social_instagram)
-          i.fa.fa-instagram
-    if config.social_rss
-      li
-        a(href= url_for(config.social_rss))
-          i.fa.fa-rss
+        a(href="https://www.flickr.com/photos/" + config.social_flickr)
+          i.fa.fa-flickr
     if config.social_weibo
       li
-        a(href="http://weibo.com/" + config.social_weibo)
+        a(href="https://weibo.com/" + config.social_weibo)
           i.fa.fa-weibo
-    if config.social_facebook
-      li
-        a(href="http://facebook.com/" + config.social_facebook)
-          i.fa.fa-facebook
     if config.social_github
       li
         a(href="https://github.com/" + config.social_github)
           i.fa.fa-github
+    if config.social_wechat
+      li
+        a(href=config.social_wechat)
+          i.fa.fa-wechat
+    if config.social_alipay
+      li
+        a(href=config.social_alipay)
+          i.fa.fa-credit-card
