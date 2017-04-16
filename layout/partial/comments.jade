@@ -1,8 +1,8 @@
-if config.theme_disqus
+if config.disqus_shortname
     a#comments
     #disqus_thread
     script.
-        var disqus_shortname = '#{config.theme_disqus}';
+        var disqus_shortname = '#{config.disqus_shortname}';
         var disqus_identifier = '#{page.path}';
         var disqus_title = '#{page.title}';
         var disqus_url = '#{config.url}/#{page.path}';
@@ -11,4 +11,4 @@ if config.theme_disqus
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    script(id='dsq-count-scr' src='//#{config.theme_disqus}.disqus.com/count.js' async)
+    script(id='dsq-count-scr' src='//#{config.disqus_shortname}.disqus.com/count.js' async)

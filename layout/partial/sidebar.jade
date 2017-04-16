@@ -8,27 +8,27 @@
           p= config.subtitle
 
   ul.social-links
-    if config.theme_twitter
+    if config.social_twitter
       li
-        a(href="https://twitter.com/" + config.theme_twitter)
+        a(href="https://twitter.com/" + config.social_twitter)
           i.fa.fa-twitter
-    if config.theme_instagram
+    if config.social_instagram
       li
-        a(href="http://instagram.com/" + config.theme_instagram)
+        a(href="http://instagram.com/" + config.social_instagram)
           i.fa.fa-instagram
-    if config.theme_rss
+    if config.social_rss
       li
-        a(href= url_for(config.theme_rss))
+        a(href= url_for(config.social_rss))
           i.fa.fa-rss
-    if config.theme_weibo
+    if config.social_weibo
       li
-        a(href="http://weibo.com/" + config.theme_weibo)
+        a(href="http://weibo.com/" + config.social_weibo)
           i.fa.fa-weibo
-    if config.theme_facebook
+    if config.social_facebook
       li
-        a(href="http://facebook.com/" + config.theme_facebook)
+        a(href="http://facebook.com/" + config.social_facebook)
           i.fa.fa-facebook
-    if config.theme_github
+    if config.social_github
       li
-        a(href="https://github.com/" + config.theme_github)
+        a(href="https://github.com/" + config.social_github)
           i.fa.fa-github
