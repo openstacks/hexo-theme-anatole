@@ -8,5 +8,5 @@ rss: atom.xml
 weibo: ben0036
 instagram: hwbinbenben
 
-# Comment
-disqus:
+less:
+  compress: true
